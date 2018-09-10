@@ -24,3 +24,5 @@ public final class PostgreSQLUserRole: PostgreSQLPivot, AnyUserRole {
         self.roleID = try role.requireID()
     }
 }
+
+extension PostgreSQLUserRole: Migration { }
